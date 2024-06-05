@@ -1,0 +1,14 @@
+{
+  "name": "@app/root",
+  "version": "1.0.0",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsx": "^4.11.2",
+    "typescript": "^5.4.5"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ]
+}
