@@ -1,13 +1,15 @@
 import {HttpClient} from "@angular/common/http";
 import {Injectable} from "@angular/core";
-import {catchError, Observable, take, throwError} from "rxjs";
+import {catchError, Observable, of, take, throwError} from "rxjs";
 import {Status} from "@app/model/src/Status";
+// import {UtilityService} from "@app/utility/src/utility.service";
 
 @Injectable({providedIn: 'root'})
 export class CalculateService {
     constructor(private readonly http: HttpClient) {}
 
-    getCalculate(x: number, y: number): Observable<Status> {
+    getCalculate(x: number, y: number): Observable<number> {
+        // return of(new UtilityService().calculate(x, y));
         return this.http.get<Status>('http://localhost:3000/calculate', {
             params: {
               x, y

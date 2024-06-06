@@ -2,8 +2,8 @@ import express, {Request, Response} from 'express';
 import cors, {CorsOptions} from 'cors';
 import http from 'http';
 import {Logger} from "tslog";
-import {UtilityService} from "@app/utility/src/utility.service";
 import {Status} from "@app/model/src/Status";
+import {UtilityService} from "@app/utility/src/utility.service";
 
 const logger = new Logger({ type: 'pretty' });
 

@@ -5,7 +5,13 @@
     "types": [
       "node",
       "jest"
-    ]
+    ],
+    /*
+    "paths": {
+      "@app/model/*": ["../../libs/model/*"],
+      "@app/utility/*": ["../../libs/utility/*"]
+    }
+    */
   },
   "exclude": [
     "node_modules",
