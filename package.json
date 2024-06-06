@@ -1,10 +1,10 @@
 {
   "name": "@app/root",
   "version": "1.0.0",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@jest/types": "29.6.3",
     "@types/node": "^20.14.2",
-    "tsx": "^4.11.2",
     "typescript": "^5.4.5"
   },
   "workspaces": [

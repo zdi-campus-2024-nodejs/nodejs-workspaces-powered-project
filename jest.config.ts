@@ -1,11 +1,13 @@
-import type { Config } from '@jest/types';
+import {Config} from "@jest/types";
 
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testTimeout: 60000,
   roots: ['<rootDir>'],
+  collectCoverage: true,
   coverageDirectory: 'test-results',
+  coverageProvider: "v8",
   coverageReporters: [
     'text',
     'text-summary',
